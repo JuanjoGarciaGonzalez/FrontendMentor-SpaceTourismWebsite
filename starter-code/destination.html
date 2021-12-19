@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="CSS/estilos-home.css">
+  <title>Frontend Mentor | Space tourism website</title>
+  <script src="JS/ajax-destination.js" defer></script>
+  <script src="JS/menu-hamburguesa.js" defer></script>
+</head>
+<body class="body-destination">
+
+  <main>
+    <!-- MENU-PRINCIPAL -->
+    <nav class="menu-principal">
+      <div class="logo">
+        <a href="index.html"><img src="assets/shared/logo.svg" alt="Logo"></a>
+      </div>
+
+      <div class="barra">
+
+      </div>
+
+      <ul>
+        <li><a href="index.html"><span>00</span> Home</a></li>
+        <li class="active"><a href="destination.html"><span>01</span> Destination</a></li>
+        <li><a href="crew.html"><span>02</span> Crew</a></li>
+        <li><a href="technology.html"><span>03</span> Technology</a></li>
+      </ul>
+
+      <div class="icono-menu-hamburguesa">
+        <img src="assets/shared/icon-hamburger.svg" alt="Icono menu hamburguesa" id="icono-menu">
+      </div>
+
+      <div class="menu-hamburguesa">
+        <ul>
+          <li><a href="index.html"><span>00</span> Home</a></li>
+          <li><a href="destination.html"><span>01</span> Destination</a></li>
+          <li><a href="crew.html"><span>02</span> Crew</a></li>
+          <li><a href="technology.html"><span>03</span> Technology</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- CONTENIDO-DESTINATION -->
+    <div class="titulo">
+      <h5><span>01</span> Pick your destination</h5>
+    </div>
+
+    <div class="menu-destination">
+      <ul>
+        <li id="moon" class="elementos-menu-destinations active">MOON</li>
+        <li id="mars" class="elementos-menu-destinations">MARS</li>
+        <li id="europa" class="elementos-menu-destinations">EUROPA</li>
+        <li id="titan" class="elementos-menu-destinations">TITAN</li>
+      </ul>
+    </div>
+
+    <div class="contenido-destination">
+      <div class="imagen">
+        <img src="assets/destination/image-moon.webp" alt="" id="imagen-destination">
+      </div>
+
+      <div class="descripcion">
+        <h2 id="destination-title">Moon</h2>
+        <p class="description" id="destination-description">See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.</p>
+        <div id="div-datos-numericos">
+          <div class="distance">
+            <span class="disance-title">AVG. DISTANCE</span>
+            <span class="disance-distance" id="destination-distance">384,400 km</span>
+          </div>
+          <div class="travel">
+            <span class="travel-title">EST. TRAVEL TIME</span>
+            <span class="travel-time" id="destination-time">3 days</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+  
+</body>
+</html>
